@@ -94,7 +94,8 @@ cd 06_fullstack/server && npm i && npm run devstart
 
 Here is a query for all of the comments on a single post
 
-![Screen Shot 2021-12-17 at 6 32 53 PM](https://user-images.githubusercontent.com/40828283/146585274-cd18e8fe-5b19-4459-9cb7-68ce32061c65.png)
+![Screen Shot 2021-12-17 at 6 42 45 PM](https://user-images.githubusercontent.com/40828283/146586016-1a01c171-d631-4f04-9161-3a71f63b4cae.png)
+
 
 Here is a query for multiple posts
 
