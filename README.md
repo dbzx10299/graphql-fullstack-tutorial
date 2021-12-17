@@ -24,7 +24,14 @@ To run the app, run this command from the terminal window from the root:
 cd 02_graphql-cursor-json-server && npm i && npm run devstart
 ```
 
-here is a basic query based on this tutorials schema: 
+here are two basic queries based on this tutorials schema: 
+
+![Screen Shot 2021-12-17 at 6 46 49 PM](https://user-images.githubusercontent.com/40828283/146586534-1a4d1166-35cb-475a-8a23-469fc12ee340.png)
+
+![Screen Shot 2021-12-17 at 6 46 20 PM](https://user-images.githubusercontent.com/40828283/146586551-dbaa2e49-2f3e-4627-8229-61dd0e8f0721.png)
+
+
+
 
 
 # 03
@@ -77,6 +84,11 @@ cd 06_fullstack/client && npm i && npm start
 ```shell
 cd 06_fullstack/server && npm i && npm run devstart
 ```
+
+Open a new window with apollo and run this code, you will see an indicator in the subscriptions pane that the server is listening. When you add a book with a mutation in the other tab you will see it is added to the subscription pane.
+
+![Screen Shot 2021-11-21 at 12 46 24 PM](https://user-images.githubusercontent.com/40828283/146587256-209c654b-f111-4b41-a15c-fd5c2599d1c1.png)
+
 
 # 07
 
