@@ -82,5 +82,8 @@ cd 06_fullstack/client && npm i && npm start
 ```
 ```shell
 cd 06_fullstack/server && npm i && npm run devstart
-```![Screen Shot 2021-11-21 at 12 46 24 PM](https://user-images.githubusercontent.com/40828283/146582048-9d090ef8-da04-4e7f-923b-a32df54f6762.png)
+```
 
+
+
+![Screen Shot 2021-11-21 at 12 46 24 PM](https://user-images.githubusercontent.com/40828283/146582122-c8985428-31f2-4b86-a632-5ea3b3374b2d.png)
