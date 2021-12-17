@@ -2,6 +2,10 @@
 
 Each directory is a self-contained example application that demonstrates the usage of graphql. The idea was to start with a simple example of books with authors. A book can have one author, but an author can have many books. This structure is maintained throughout and each new directory slightly builds off the last one without creating a whole new schema which can be confusing for someone trying to learn graphql.
 
+# queries 
+
+scroll to the bottom to see some basic query examples based off of this tutorial's schema
+
 # 01 - 04
 
 These are server side only, from the root you have to cd into the folder, run `npm install` and then `npm run devstart`. You will receive a link in the terminal specifying where to go to query the server.
@@ -84,6 +88,7 @@ cd 06_fullstack/client && npm i && npm start
 cd 06_fullstack/server && npm i && npm run devstart
 ```
 
+# queries
 
 
-![Screen Shot 2021-11-21 at 12 46 24 PM](https://user-images.githubusercontent.com/40828283/146582122-c8985428-31f2-4b86-a632-5ea3b3374b2d.png)
+
