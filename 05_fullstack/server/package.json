@@ -1,0 +1,21 @@
+{
+  "name": "prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devstart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prisma": "^3.5.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.5.0",
+    "apollo-server": "^3.5.0",
+    "graphql": "^15.7.2"
+  }
+}

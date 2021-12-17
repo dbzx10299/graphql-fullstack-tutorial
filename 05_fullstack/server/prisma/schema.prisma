@@ -1,0 +1,24 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["mongoDb"]
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// 1-n relationship because 1 author can have many books
+model Author {
+  id    String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  name  String
+  books Book[]
+}
+
+model Book {
+  id        String   @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  title     String
+  author    Author   @relation(fields: [authorId], references: [id])
+  authorId  String   @db.ObjectId
+  createdAt DateTime @default(now())
+}

@@ -1,0 +1,63 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Book 1",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "Book 2",
+      "authorId": 1
+    },
+    {
+      "id": 3,
+      "title": "Book 3",
+      "authorId": 1
+    },
+    {
+      "id": 4,
+      "title": "Book 4",
+      "authorId": 2
+    },
+    {
+      "id": 5,
+      "title": "Book 5",
+      "authorId": 2
+    },
+    {
+      "id": 6,
+      "title": "Book 6",
+      "authorId": 2
+    },
+    {
+      "id": 7,
+      "title": "Book 7",
+      "authorId": 3
+    },
+    {
+      "id": 8,
+      "title": "Book 8",
+      "authorId": 3
+    },
+    {
+      "id": 9,
+      "title": "Book 9",
+      "authorId": 3
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Author 1"
+    },
+    {
+      "id": 2,
+      "name": "Author 2"
+    },
+    {
+      "id": 3,
+      "name": "Author 3"
+    }
+  ]
+}
