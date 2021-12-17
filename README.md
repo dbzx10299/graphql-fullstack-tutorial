@@ -1,6 +1,6 @@
 # graphql-fullstack-tutorial
 
-Each directory is a self-contained example application that demonstrates the usage of graphql. The idea was to start with a simple example of books with authors. A book can have one author, but an author can have many books. This structure is maintained throughout and each new directory slightly build off the last one without creating a whole new schema which can be confusing for someone trying to learn graphql.
+Each directory is a self-contained example application that demonstrates the usage of graphql. The idea was to start with a simple example of books with authors. A book can have one author, but an author can have many books. This structure is maintained throughout and each new directory slightly builds off the last one without creating a whole new schema which can be confusing for someone trying to learn graphql.
 
 # 01 - 04
 
@@ -35,7 +35,7 @@ cd 03_apollo-server && npm i && npm run devstart
 
 # 04
 
-To make things a bit more realistic we will now switch over to using a database. You will need to go to mongodb atlas and create a cluster. From there you will need to paste this link in the .env file
+To make things a bit more realistic we will now switch over to using a database. You will need to go to mongodb atlas and create a cluster. From there you will need to paste this link in the .env file under the variable mongoDB
 
 
 To run the app, run this command from the terminal window from the root: 
@@ -73,7 +73,8 @@ cd 06_fullstack/server && npm i && npm run devstart
 
 # 07
 
-Rather than using books with authors, here is a more realistic example using comments and posts. There is pagination on the posts, but also on the comments. 
+Rather than using books with authors, here is a more realistic example using comments and posts. There is pagination on the posts, but also on the comments.
+Open two browser windows, add a new post, and watch it appear on the other tab without refreshing the page.
 
 To run the app, run these commands in two separate terminal windows from the root:
 ```shell
