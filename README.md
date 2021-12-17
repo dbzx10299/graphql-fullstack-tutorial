@@ -38,6 +38,10 @@ To run the app, run this command from the terminal window from the root:
 cd 03_apollo-server && npm i && npm run devstart
 ```
 
+![Screen Shot 2021-12-17 at 6 21 43 PM](https://user-images.githubusercontent.com/40828283/146583485-e4fd9b69-8297-44bf-96f8-006e9c0851f2.png)
+
+
+
 # 04
 
 To make things a bit more realistic we will now switch over to using a database. You will need to go to mongodb atlas and create a cluster. From there you will need to paste this link in the .env file under the variable mongoDB
@@ -87,9 +91,15 @@ cd 06_fullstack/client && npm i && npm start
 ```
 ```shell
 cd 06_fullstack/server && npm i && npm run devstart
+
 ```
 
-# queries
+Here is a query for all of the comments on a single post
 
+![Screen Shot 2021-12-17 at 6 32 53 PM](https://user-images.githubusercontent.com/40828283/146585274-cd18e8fe-5b19-4459-9cb7-68ce32061c65.png)
+
+Here is a query for multiple posts
+
+![Screen Shot 2021-11-21 at 12 46 24 PM](https://user-images.githubusercontent.com/40828283/146585369-0525f939-317c-454f-b224-50b31430a7e4.png)
 
 
