@@ -1,4 +1,4 @@
-export const AuthorTile = ({ node }) => {
+export default function AuthorCard({ node }) {
     const { id, name, books } = node;
 
     return (

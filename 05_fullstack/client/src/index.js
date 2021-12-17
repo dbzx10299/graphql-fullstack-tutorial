@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './App.css';
-import BookCards from './BookCards'
-import AuthorCards from './AuthorCards'
+import BookPage from './BookPage'
+import AuthorPage from './AuthorPage'
 import Navbar from './Navbar'
 import { cache } from './cache'
 import { ApolloClient, ApolloProvider, gql } from "@apollo/client";
@@ -15,6 +15,7 @@ const client = new ApolloClient({
 })
 
 // check the console to see how to work with query in code
+// NOTE! This will affect the cache, use this only to see how the data looks then uncomment it
 
 // client
 //   .query({
@@ -54,23 +55,19 @@ const client = new ApolloClient({
 //   })
 //   .then(result => console.log('many books: ', result));
 
-
-
 function App() {
   return (<>
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="books" element={<BookCards />} />
-        <Route path="authors" element={<AuthorCards />} />
+        <Route path="books" element={<BookPage />} />
+        <Route path="authors" element={<AuthorPage />} />
       </Routes>
     </BrowserRouter>
     {/* <AuthorCards /> */}
     {/* <BookCards /> */}
   </>)
 }
-
-
 
 render(
   <ApolloProvider client={client}>

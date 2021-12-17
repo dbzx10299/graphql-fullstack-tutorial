@@ -1,20 +1,15 @@
-import {
-    useQuery,
-    useLazyQuery,
-    gql
-} from "@apollo/client";
-
-import BookForm from './BookForm'
+import { useQuery, gql } from "@apollo/client";
 import Loading from './Loading'
 import Modal from './Modal'
-import { BookTile } from './BookTile'
+import AuthorCard from './AuthorCard'
+import AuthorForm from './AuthorForm'
 import { useState } from 'react'
 
 
 
-const GET_BOOKS = gql`
-    query getBooks($first: Int!, $after: String) {
-        books(first: $first, after: $after) {
+const GET_AUTHORS = gql`
+    query getAuthors($first: Int!, $after: String) {
+        authors(first: $first, after: $after) {
             totalCount
             pageInfo {
                 hasNextPage
@@ -24,10 +19,10 @@ const GET_BOOKS = gql`
             }
             edges {
                 node {
-                    title
+                    name
                     id 
-                    author {
-                      name
+                    books {
+                      title
                     }
                 }
             }
@@ -36,9 +31,8 @@ const GET_BOOKS = gql`
 `
 
 
-export default function BookCards() {
-    // first 2 is the initial number fetched when page loads, then subsequent amount comes from fetchMore
-    const { data, loading, error, fetchMore } = useQuery(GET_BOOKS, { variables: { first: 2 }})
+export default function AuthorPage() {
+    const { data, loading, error, fetchMore } = useQuery(GET_AUTHORS, { variables: { first: 2 }})
     const [isLoadingMore, setIsLoadingMore] = useState(false);
     if (loading) return <Modal />
     if (error) return <p>Error...</p>;
@@ -46,15 +40,15 @@ export default function BookCards() {
 
     return (<>
         <div className="app-main">
-            <BookForm />
+            <AuthorForm />
             <div className="card-wrapper">
                 <div className="card-wrapper__inner">
-                    {data?.books?.edges.map(({node}) => (
-                        <BookTile key={node.id} node={node} />
+                    {data?.authors?.edges.map(({node}) => (
+                        <AuthorCard key={node.id} node={node} />
                     ))}
                 </div>
 
-                {data.books?.pageInfo?.hasNextPage && (
+                {data.authors?.pageInfo?.hasNextPage && (
                     isLoadingMore
                         ? <Loading />
                         : <button className="app-btn"
@@ -63,7 +57,7 @@ export default function BookCards() {
                                 await fetchMore({
                                     variables: {
                                         first: 2,
-                                        after: data.books.pageInfo.endCursor,
+                                        after: data.authors.pageInfo.endCursor,
                                     }
                                 });
                                 setIsLoadingMore(false);
