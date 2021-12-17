@@ -26,8 +26,6 @@ cd 02_graphql-cursor-json-server && npm i && npm run devstart
 
 here is a basic query based on this tutorials schema: 
 
-![Screen Shot 2021-12-17 at 6 18 12 PM](https://user-images.githubusercontent.com/40828283/146583101-53be5945-dd2f-4899-a88c-756964c05a94.png)
-
 
 # 03
 
@@ -100,6 +98,6 @@ Here is a query for all of the comments on a single post
 
 Here is a query for multiple posts
 
-![Screen Shot 2021-11-21 at 12 46 24 PM](https://user-images.githubusercontent.com/40828283/146585369-0525f939-317c-454f-b224-50b31430a7e4.png)
+![Screen Shot 2021-12-17 at 6 29 43 PM](https://user-images.githubusercontent.com/40828283/146585466-fcc748ec-2af9-4c71-b235-ec41024aa7e6.png)
 
 
