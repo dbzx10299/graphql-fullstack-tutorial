@@ -72,7 +72,9 @@ const typeDefs = gql `
     }
 
     type Query {
+        book(id: Int!): Book
         books(first: Int!, after: String): BookConnection
+        author(id: Int!): Author
         authors(first: Int!, after: String): AuthorConnection
     }
 
@@ -84,6 +86,12 @@ const typeDefs = gql `
 
 const resolvers = {
     Query: {
+        book: (_, { id }) => {
+            return books.find(book => book.id === id)
+        },
+        author: (_, { id }) => {
+            return authors.find(author => author.id === id)
+        },
         books: (_, { first, after }) => {
             let afterIndex = 0
             let beforeIndex
