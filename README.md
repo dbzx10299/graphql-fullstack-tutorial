@@ -1,6 +1,6 @@
 # graphql-fullstack-tutorial
 
-Each directory is a self-contained example application that demonstrates the usage of graphql. The idea was to start with a simple example of books with authors. A book can have one author, but an author can have many books. This structure is maintained throughout and each new directory slightly build off the last one without creating a whole new schema which can be confusing for someone trying to learn graphql.
+Each directory is a self-contained example application that demonstrates the usage of graphql. The idea was to start with a simple example of books with authors. A book can have one author, but an author can have many books. This structure is maintained throughout and each new directory slightly builds off the last one without creating a whole new schema which can be confusing for someone trying to learn graphql.
 
 # 01 - 04
 
@@ -24,6 +24,16 @@ To run the app, run this command from the terminal window from the root:
 cd 02_graphql-cursor-json-server && npm i && npm run devstart
 ```
 
+here are two basic queries based on this tutorials schema: 
+
+![Screen Shot 2021-12-17 at 6 46 49 PM](https://user-images.githubusercontent.com/40828283/146586534-1a4d1166-35cb-475a-8a23-469fc12ee340.png)
+
+![Screen Shot 2021-12-17 at 6 46 20 PM](https://user-images.githubusercontent.com/40828283/146586551-dbaa2e49-2f3e-4627-8229-61dd0e8f0721.png)
+
+
+
+
+
 # 03
 
 Instead of using the graphql server, now we switch over to apollo, this should showcase how much more convenient it is to define a schema and how much simpler it is to use nested resolvers.
@@ -33,9 +43,13 @@ To run the app, run this command from the terminal window from the root:
 cd 03_apollo-server && npm i && npm run devstart
 ```
 
+![Screen Shot 2021-12-17 at 6 21 43 PM](https://user-images.githubusercontent.com/40828283/146583485-e4fd9b69-8297-44bf-96f8-006e9c0851f2.png)
+
+
+
 # 04
 
-To make things a bit more realistic we will now switch over to using a database. You will need to go to mongodb atlas and create a cluster. From there you will need to paste this link in the .env file
+To make things a bit more realistic we will now switch over to using a database. You will need to go to mongodb atlas and create a cluster. From there you will need to paste this link in the .env file under the variable mongoDB
 
 
 To run the app, run this command from the terminal window from the root: 
@@ -71,9 +85,15 @@ cd 06_fullstack/client && npm i && npm start
 cd 06_fullstack/server && npm i && npm run devstart
 ```
 
+Open a new window with apollo and run this code, you will see an indicator in the subscriptions pane that the server is listening. When you add a book with a mutation in the other tab you will see it is added to the subscription pane.
+
+![Screen Shot 2021-11-21 at 12 46 24 PM](https://user-images.githubusercontent.com/40828283/146587256-209c654b-f111-4b41-a15c-fd5c2599d1c1.png)
+
+
 # 07
 
-Rather than using books with authors, here is a more realistic example using comments and posts. There is pagination on the posts, but also on the comments. 
+Rather than using books with authors, here is a more realistic example using comments and posts. There is pagination on the posts, but also on the comments.
+Open two browser windows, add a new post, and watch it appear on the other tab without refreshing the page.
 
 To run the app, run these commands in two separate terminal windows from the root:
 ```shell
@@ -81,4 +101,16 @@ cd 06_fullstack/client && npm i && npm start
 ```
 ```shell
 cd 06_fullstack/server && npm i && npm run devstart
+
 ```
+
+Here is a query for all of the comments on a single post
+
+![Screen Shot 2021-12-17 at 6 42 45 PM](https://user-images.githubusercontent.com/40828283/146586016-1a01c171-d631-4f04-9161-3a71f63b4cae.png)
+
+
+Here is a query for multiple posts
+
+![Screen Shot 2021-12-17 at 6 29 43 PM](https://user-images.githubusercontent.com/40828283/146585466-fcc748ec-2af9-4c71-b235-ec41024aa7e6.png)
+
+
