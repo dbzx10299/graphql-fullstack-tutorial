@@ -25,7 +25,7 @@ const GET_POSTS = gql`
 
 
 
-export default function Authors() {
+export default function PostsPage() {
     const { data, loading, error, fetchMore } = useQuery(GET_POSTS, { variables: { first: 2 } })
     const [isLoadingMore, setIsLoadingMore] = useState(false);
 

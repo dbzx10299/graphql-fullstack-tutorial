@@ -31,7 +31,7 @@ const POST_QUERY = gql`
     }
 `;
 
-export default function RecentPost() {
+export default function MostRecentPage() {
     const { subscribeToMore, ...result } = useQuery(POST_QUERY, { variables: { first: 100, firstComments: 100 }})
    
     return (<>

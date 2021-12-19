@@ -21,6 +21,7 @@ const GET_COMMENTS = gql`
     }
 `;
 
+// for each post we have to get the comments on that specific post
 export const Post = ({ node }) => {
     const { id, body } = node;
     const { data, loading, error, fetchMore } = useQuery(GET_COMMENTS, { variables: { id: id, first: 2 }})

@@ -2,7 +2,7 @@ import Modal from "./Modal"
 import { useEffect } from 'react';
 import MostRecentComment from './MostRecentComment';
 
-export default function RecentCard({ data, loading, subscribeToNewPosts }) {
+export default function MostRecentPost({ data, loading, subscribeToNewPosts }) {
 
     useEffect(() => {
         subscribeToNewPosts();

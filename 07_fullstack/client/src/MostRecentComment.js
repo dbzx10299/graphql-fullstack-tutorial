@@ -1,8 +1,6 @@
-import { gql, useQuery } from "@apollo/client";
 
 
-
-export default function Comment({ node, subscribeToNewComments }) {
+export default function MostRecentComment({ node, subscribeToNewComments }) {
     const { body } = node;
 
     return (<>
