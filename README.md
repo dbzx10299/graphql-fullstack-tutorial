@@ -106,6 +106,16 @@ Open a new window with apollo and run this code, you will see an indicator in th
 Rather than using books with authors, here is a more realistic example using comments and posts. There is pagination on the posts, but also on the comments.
 Open two browser windows, add a new post, and watch it appear on the other tab without refreshing the page.
 
+From the project root you will need to create a `.env` file and put the url to your mongoDB atlas cluster there
+```
+DATABASE_URL="mongodb://USERNAME:PASSWORD@HOST/DATABASE"
+```
+Once this is done, run:
+```shell
+npx prisma generate
+```
+
+
 To run the app, run these commands in two separate terminal windows from the root:
 ```shell
 cd 06_fullstack/client && npm i && npm start
