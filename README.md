@@ -47,6 +47,17 @@ cd 03_apollo-server && npm i && npm run devstart
 
 
 
+# 03.1
+
+This example gets rid of the code duplication to make the code DRY. The resolvers for books and authors now have had all of the code moved out into another function `cursorPagination`.
+
+To run the app, run this command from the terminal window from the root: 
+```shell
+cd 03.1_apollo-server && npm i && npm run devstart
+```
+
+
+
 # 04
 
 To make things a bit more realistic we will now switch over to using a database. You will need to go to mongodb atlas and create a cluster. From there you will need to paste this link in the .env file under the variable mongoDB
