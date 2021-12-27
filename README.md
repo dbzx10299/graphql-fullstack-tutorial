@@ -110,11 +110,6 @@ From the project root you will need to create a `.env` file and put the url to y
 ```
 DATABASE_URL="mongodb://USERNAME:PASSWORD@HOST/DATABASE"
 ```
-Once this is done, run:
-```shell
-npx prisma generate
-```
-
 
 To run the app, run these commands in two separate terminal windows from the root:
 ```shell
@@ -123,6 +118,15 @@ cd 06_fullstack/client && npm i && npm start
 ```shell
 cd 06_fullstack/server && npm i && npm run devstart
 
+```
+
+If you get a connection error, your `DATABASE_URL` could be wrong, if you correct it, make sure you run:
+``` shell
+npx prisma generate
+```
+and then once that finishes:
+```shell
+npm run devstart
 ```
 
 Here is a query for all of the comments on a single post
