@@ -129,12 +129,12 @@ and then once that finishes:
 npm run devstart
 ```
 
-Here is a query for all of the comments on a single post
+### query for all of the comments on a single post
 
 ![Screen Shot 2021-12-17 at 6 42 45 PM](https://user-images.githubusercontent.com/40828283/146586016-1a01c171-d631-4f04-9161-3a71f63b4cae.png)
 
 
-Here is a query for multiple posts
+### query for multiple posts
 
 ![Screen Shot 2021-12-17 at 6 29 43 PM](https://user-images.githubusercontent.com/40828283/146585466-fcc748ec-2af9-4c71-b235-ec41024aa7e6.png)
 
