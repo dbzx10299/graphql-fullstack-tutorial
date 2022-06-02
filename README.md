@@ -109,14 +109,15 @@ Open two browser windows, add a new post, and watch it appear on the other tab w
 From the project root you will need to create a `.env` file and put the url to your mongoDB atlas cluster there
 ```
 DATABASE_URL="mongodb://USERNAME:PASSWORD@HOST/DATABASE"
+DATABASE_URL="mongodb+srv://<name>:<password>@<clusterName>.leuwl.mongodb.net/<DatabaseName>?retryWrites=true&w=majority"
 ```
 
 To run the app, run these commands in two separate terminal windows from the root:
 ```shell
-cd 06_fullstack/client && npm i && npm start
+cd 07_fullstack/client && npm i && npm start
 ```
 ```shell
-cd 06_fullstack/server && npm i && npm run devstart
+cd 07_fullstack/server && npm i && npm run devstart
 
 ```
 
